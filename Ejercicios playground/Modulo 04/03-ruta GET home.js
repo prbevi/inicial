@@ -1,0 +1,10 @@
+/* Exploremos los diferentes métodos que podemos usar con el módulo express.
+
+Nuestro trabajo será, utilizando el método get, crear una ruta hacia "/home" que devuelva la frase "Hola, estamos en el home". */
+
+const express = require('express');
+const app = express();
+
+app.get('/home',function(req,res){
+    res.send('Hola, estamos en el home');
+});
